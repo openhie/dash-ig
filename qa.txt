@@ -3,7 +3,7 @@
 
 err = 1, warn = 2, info = 0
 IG Publisher Version: 1.1.114
-Generated Wed Apr 06 10:22:23 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
+Generated Wed Apr 06 10:26:36 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
  Build Errors : 0 / 1 / 0
  /github/workspace/input/dash : 1 / 1 / 1
 </table>
