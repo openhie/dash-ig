@@ -1,7 +1,7 @@
 <ul
 	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
 	<li>
-		<a href="index.html">IG Home</a>
+		<a href="index.html">Home</a>
 	</li>
 	<li>
 		<a href="toc.html">Table of Contents</a>
@@ -19,12 +19,58 @@
 	</li>
 -->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Business<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="artifacts.html">Artifact Index</a>
+				<a href="concepts.html">Concepts</a>
+			</li>
+			<li>
+				<a href="requirements.html">Requirements</a>
+			</li>
+			<li>
+				<a href="personas.html">Personas</a>
+			</li>
+			<li>
+				<a href="usecases.html">Use Cases</a>
+			</li>
+			<li>
+				<a href="workflows.html">Workflows</a>
 			</li>
 		</ul>
 	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="actors.html">Actors</a>
+			</li>
+			<li>
+				<a href="transactions.html">Transactions</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="testing.html">Testing</a>
+			</li>
+			<li>
+				<a href="security-privacy.html">Security and Privacy</a>
+			</li>
+			<li>
+				<a href="reference-implementations.html">Reference Implementations</a>
+			</li>
+			<li>
+				<a href="downloads.html">Downloads</a>
+			</li>
+		</ul>
+	</li>
+
+
 </ul>      
