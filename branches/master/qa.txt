@@ -1,14 +1,21 @@
 ﻿OpenHIE DASH : Validation Results
 =========================================
 
-err = 1, warn = 2, info = 0
+err = 3, warn = 4, info = 0
 IG Publisher Version: 1.1.114
-Generated Wed Apr 06 16:47:27 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
- Build Errors : 0 / 1 / 0
- /github/workspace/input/dash : 1 / 1 / 1
+Generated Wed Apr 06 17:04:04 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
+ Build Errors : 1 / 2 / 0
+ /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire : 3 / 1 / 1
+ /github/workspace/input/dash : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be xxexample.fhir.uv.myig
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/PLM-HIV-Questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-PLM-HIV-Questionnaire-form.html: Unable to read attribute on <div> at line 261 column 71
+== fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json ==
+ERROR: Questionnaire.where(url = 'http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.dash/Questionnaire/PLM-HIV-Questionnaire) does not match the URL (http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire)
+ERROR: Questionnaire/PLM-HIV-Questionnaire: Questionnaire.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' does not resolve
+WARNING: Questionnaire/PLM-HIV-Questionnaire: Questionnaire.meta.profile[0]: Profile reference 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire: URL Mismatch http://openhie.org/fhir/openhie.dash/Questionnaire/PLM-HIV-Questionnaire vs http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire
 == input/dash.xml ==
 WARNING: ImplementationGuide/openhie.dash: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: ImplementationGuide/openhie.dash: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)

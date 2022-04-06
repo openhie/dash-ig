@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 1, warn = 2, info = 0 -->
+<!-- broken links = 1, errors = 3, warn = 4, info = 0 -->
 <head>
   <title>OpenHIE DASH : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for OpenHIE DASH</h1>
- <p>Generated Wed Apr 06 16:47:27 UTC 2022, FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.dash">http://openhie.org/fhir/openhie.dash</a> (<a href="http://openhie.org/fhir/openhie.dash/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed Apr 06 17:04:04 UTC 2022, FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = <a href="http://openhie.org/fhir/openhie.dash">http://openhie.org/fhir/openhie.dash</a> (<a href="http://openhie.org/fhir/openhie.dash/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.114</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = xxexample.fhir.uv.myig, Canonical = http://openhie.org/fhir/openhie.dash</td></tr>
@@ -51,17 +51,20 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir/openhie.dash (Problem #1 with package-list.json at http://openhie.org/fhir/openhie.dash: openhie.org)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 1, warn = 2, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 1, errors = 3, warn = 4, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_input_dash"><b>/github/workspace/input/dash</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-PLM-HIV-Questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_dash"><b>/github/workspace/input/dash</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -72,11 +75,39 @@
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be xxexample.fhir.uv.myig</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/PLM-HIV-Questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-PLM-HIV-Questionnaire-form.html">output/Questionnaire-PLM-HIV-Questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>Unable to read attribute on &lt;div&gt; at line 261 column 71</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-PLM-HIV-Questionnaire"> </a>
+<h2><a href="Questionnaire-PLM-HIV-Questionnaire.html">fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.where(url = 'http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.dash/Questionnaire/PLM-HIV-Questionnaire) does not match the URL (http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.meta.profile[0]</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.meta.profile[0]</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://openhie.org/fhir/openhie.dash/Questionnaire/PLM-HIV-Questionnaire vs http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_input_dash"> </a>
-<h2><a href="ImplementationGuide-openhie.dash.html">input/dash.xml</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"></div>
+<h2><a href="ImplementationGuide-openhie.dash.html">input/dash.xml</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"></div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -84,20 +115,33 @@
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide.definition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)</b></td>
-   </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Validation_VAL_Profile_Minimum"> </a>
-<h2>Validation_VAL_Profile_Minimum</h2>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="ImplementationGuide-openhie.dash.html">input/dash.xml</a></td><td><b>ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)</b></td>
+     <td><a href="Questionnaire-PLM-HIV-Questionnaire.html">fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json - the canonical URL (http://openhie.org/fhir/openhie.dash/Questionnaire/PLM-HIV-Questionnaire) does not match the URL (http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-PLM-HIV-Questionnaire.html">fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-PLM-HIV-Questionnaire.html">fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json</a></td><td><b>Profile reference 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
 </table>
 </body>
