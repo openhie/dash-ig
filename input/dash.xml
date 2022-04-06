@@ -42,12 +42,6 @@
         <generation value="markdown" />
       </page>
 
-      <page>
-        <nameUrl value="usecases.html" />
-        <title value="DASH use cases" />
-        <!-- for markdown -->
-        <generation value="markdown" />
-      </page>
 
       <page>
         <nameUrl value="concepts.html" />
@@ -71,8 +65,23 @@
       </page>
 
       <page>
+        <nameUrl value="usecases.html" />
+        <title value="DASH use cases" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="workflows.html" />
+        <title value="Workflows" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+
+      <page>
         <nameUrl value="actors.html" />
-        <title value="Personas" />
+        <title value="Actors" />
         <!-- for markdown -->
         <generation value="markdown" />
       </page>
@@ -92,13 +101,6 @@
       </page>
 
       <page>
-        <nameUrl value="downloads.html" />
-        <title value="Downloads" />
-        <!-- for markdown -->
-        <generation value="markdown" />
-      </page>
-
-      <page>
         <nameUrl value="security-privacy.html" />
         <title value="Security and Privacy" />
         <!-- for markdown -->
@@ -106,12 +108,18 @@
       </page>
 
       <page>
-        <nameUrl value="workflows.html" />
-        <title value="Workflows" />
+        <nameUrl value="reference-implementations.html" />
+        <title value="Reference Implementations" />
         <!-- for markdown -->
         <generation value="markdown" />
       </page>
 
+      <page>
+        <nameUrl value="downloads.html" />
+        <title value="Downloads" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
 
 
 
