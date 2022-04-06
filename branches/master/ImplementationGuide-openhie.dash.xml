@@ -12,7 +12,7 @@
   <title value="OpenHIE DASH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-04-06T10:26:24+00:00"/>
+  <date value="2022-04-06T16:29:52+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -238,6 +238,56 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="DASH use cases"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="concepts.html"/>
+        <title value="Concepts"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="requirements.html"/>
+        <title value="Requirements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="personas.html"/>
+        <title value="Personas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="actors.html"/>
+        <title value="Personas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="transactions.html"/>
+        <title value="Transacions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="testing.html"/>
+        <title value="Testing"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security-privacy.html"/>
+        <title value="Security and Privacy"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="workflows.html"/>
+        <title value="Workflows"/>
         <generation value="markdown"/>
       </page>
       <page>
