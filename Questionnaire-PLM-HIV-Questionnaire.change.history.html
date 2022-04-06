@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.DASH\Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide - FHIR v4.0.1</title>
+    <title>OPENHIE.DASH\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,8 +53,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -184,7 +188,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</b></li>
+          
           
         </ul>
       </div>  <!-- /container -->
@@ -196,16 +200,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">OpenHIE DASH - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.dash/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</h2>
   
 
 
@@ -213,146 +210,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-  <table class="">
-
-    <tr>
 
 
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-PLM-HIV-Questionnaire.html">Narrative Content</a>
+  </li>
 
 
+  
+    <li>
+      <a href="Questionnaire-PLM-HIV-Questionnaire.xml.html">XML</a>
+    </li>
+  
 
 
-
-      <td colspan="4">
-        
-          
-          
-        
-      </td>
+  
+    <li>
+      <a href="Questionnaire-PLM-HIV-Questionnaire.json.html">JSON</a>
+    </li>
+  
 
 
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
-    </tr>
-
-
-
-
-  </table>
-
-
-
-
+  
+    <li>
+      <a href="Questionnaire-PLM-HIV-Questionnaire.ttl.html">TTL</a>
+    </li>
+  
 
 
 
-
-
-    <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#initial-requirements" id="markdown-toc-initial-requirements">Initial Requirements</a></li>
-  <li><a href="#relationship-to-other-fhir-implementation-guides" id="markdown-toc-relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</a></li>
-  <li><a href="#implementation-scenarios" id="markdown-toc-implementation-scenarios">Implementation Scenarios</a></li>
 </ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">: PLMHIVQuestionnaire - Change History</h2>
+  <p>History of changes for PLM-HIV-Questionnaire .</p>
+
+  
 
 </div>
-<blockquote>
-  <p>Note: This repository is a work-in-progress. It is for facilitating community discussion and not for production. It implies no endorsement from any institution including the members and participants in the OpenHIE Community of Practice.</p>
-</blockquote>
 
-<h3 id="introduction">Introduction</h3>
-
-<p>Population-level improvements in health outcomes increasingly require providers, data managers, surveillance officers, and others to utilize more granular clinical quality reporting and data sources closer to the point-of-care, if not from the patient themselves. The Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide describes an approach to utilizing patient-level data in aggregate indicator reporting that is realistic for deployment by local implementers in resource-constrained environments and embraces system heterogeneity, consent, privacy, security, and data sovereignty.</p>
-
-<p>DASH provides the methodology, artifacts, and reference technologies to support scenarios in HIV healthcare for reporting aggregate indicators based on patient-level POC data, including:</p>
-
-<ul>
-  <li>Common, minimal terminology requirements.</li>
-  <li>Data mapping tooling so that Provider data may originate in diverse databases, not just FHIR (though exchanges are performed on FHIR-structured data with FHIR operations).</li>
-  <li>FHIR Measures (indicators) for common HIV-related healthcare quality measurement.</li>
-  <li>CQL logic that is reproducible and repeatable with example data.</li>
-  <li>Questionnaires with minimal ‘Must Support’ data fields in Provider systems.</li>
-  <li>CI/CD software workflows.</li>
-  <li>Considerations for health information exchange policy makers, planners, and developers.</li>
-</ul>
-
-<h3 id="initial-requirements">Initial Requirements</h3>
-
-<p>The initial scoping from diverse stakeholders includes an architecture and tooling that fulfills at minimum the following requirements:</p>
-
-<ul>
-  <li>Protects patient identity, ie. no patient personally identifiable information in external systems.</li>
-  <li>Wholly implementable within a national system or public health domain, e.g. HIV.</li>
-  <li>Providers may provide data submissions by hand, from database exports, CSV, EHRs; may participate if they contain incomplete patient records; and may participate asynchronously, e.g. when not networked.</li>
-  <li>Based on open standards and specifications.</li>
-  <li>Easy for local implementers to adapt to any context and adapt to other public health domains.</li>
-  <li>Embraces diverse scenarios for implementation from Provider- and governance-oriented perspectives, including the degree of patient identity management.</li>
-  <li>Ingestions based on the capabilities of existing systems, e.g. centralized patient data stores.</li>
-</ul>
-
-<h3 id="relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</h3>
-
-<p>DASH was initiated to build upon several ongoing initiatives that make it easier to reduce reporting burdens, accelerate data usage, ensure patient privacy and data security. The initiatives include the WHO SMART Guidelines, FHIR Clinical Guidelines Implementation Guide (CPG IG), and the Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide.</p>
-
-<ul>
-  <li>The Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide details a way to “enable automatic data collection and submission limiting the need for manual processing and intervention”. eCQM benefits include reducing reporting burdens and maximizing the value added from using patient-level data originating the Point of Care (POC). The DASH Architecture is an implementation for resource-constrained contexts informed by the US-oriented DEQM.</li>
-  <li>The technical approach is informed by, and adheres to the FHIR Clinical Guidelines Implementation Guide (CPG IG) which provides “a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.”</li>
-  <li>The suite of WHO SMART Guidelines. The WHO SMART Guidelines cover the entire clinical decision support domain. DASH only manages a priority list of aggregate indicators, and the demonstration tooling focuses on HIV only.  However, DASH and SMART utilize the same underlying methodologies and FHIR workflows for aggregate (eCQM) reporting and terminologies will ideally overlap.</li>
-</ul>
-
-<h3 id="implementation-scenarios">Implementation Scenarios</h3>
-
-<h4 id="harmonize-data-dictionaries-and-vocabularies">Harmonize Data Dictionaries and Vocabularies</h4>
-
-<p>Implementers must determine the overlap between DASH with their participating systems that define sets of codes from data dictionaries and their code systems (LOINC, SNOMED, ICD-10, RxNorm, …). This harmonization also includes demographic details.</p>
-
-<h4 id="ingestion">Ingestion</h4>
-
-<p>DASH is meant to be adapted without systems having to possess FHIR infrastructure and with different types of EMR systems.Supported types of ingestion include:</p>
-
-<ul>
-  <li>Structured non-FHIR data such as databases exported in CSV. This data is mapped using tooling into FHIR data structures.</li>
-  <li>FHIR QuestionnaireResponse.</li>
-  <li>FHIR resource bundles.</li>
-  <li>OpenMRS instances with the latest FHIR (v2) module.</li>
-  <li>OpenELIS instances with the latest FHIR module.</li>
-</ul>
-
-<p>Many workflows are possible that address the following:</p>
-<ul>
-  <li>Patient Deduplication and Disease-Specific Shared Health Records</li>
-  <li>Data Quality, Gaps, and Cleaning Workflows</li>
-  <li>DHIS2 or another analytics platform</li>
-  <li>Privacy and Security Workflows: https://www.hl7.org/fhir/secpriv-module.html</li>
-  <li>Semantic interoperability for CQM.</li>
-</ul>
-
-<p>The above technical considerations are not exhaustive and are meant to be informed in totality by data sovereignty, national and subnational patient privacy regulation, cybersecurity, and other best practices.</p>
-
-<h4 id="optional-workflows-and-infrastructure">Optional Workflows and Infrastructure</h4>
-
-<p>DASH is not dependent upon the following infrastructure, though they enable greater scale and flexibility.</p>
-
-<ul>
-  <li>Terminology services</li>
-  <li>Client (Patient) Registry</li>
-  <li>Shared Health Records</li>
-  <li>Master Facility List</li>
-  <li>Mechanism (Attribution) Registry</li>
-</ul>
-
-<h4 id="actors-and-transactions">Actors and Transactions</h4>
-
-<p><strong>DASH Producer</strong>: A Producer in DASH fulfills the role as specified in DEQM, that of a data producer which is a creator of healthcare data, and can “include providers and provider systems; patients, care teams, caregivers, and patient engagement systems; and other related clinical systems such as laboratory, clinic, and hospital information systems”</p>
-
-<p><strong>DASH Consumer</strong>: A Consumer in DASH fulfills the role as specified in DEQM, that of a consumer of data, and can include “can include data routers and aggregators, payers, health information exchanges and health integrated networks, as well as public health and other healthcare-related agencies”.</p>
-
-
-
-
-</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -360,6 +259,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){

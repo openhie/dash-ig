@@ -1,5 +1,12 @@
 [
   {
+    "id": "PLM-HIV-Questionnaire",
+    "type": "Questionnaire",
+    "url": "http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire",
+    "version": "0.1.0-test",
+    "name": "PLMHIVQuestionnaire"
+  },
+  {
     "id": "openhie.dash",
     "type": "ImplementationGuide",
     "url": "http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash",
