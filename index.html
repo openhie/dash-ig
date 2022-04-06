@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>XXEXAMPLE.FHIR.UV.MYIG\MyIG Home Page - FHIR v4.0.1</title>
+    <title>OPENHIE.DASH\Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -77,7 +77,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">xxYour User Friendly Name for MyIG Here</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">OpenHIE DASH</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -138,7 +138,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>MyIG Home Page</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -158,10 +158,14 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">xxYour User Friendly Name for MyIG Here - Local Development build (v0.1.0-test). See the <a href="http://xxsomewhere.org/fhir/myig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>MyIG Home Page</h2>
+  <!--ReleaseHeader--><p id="publish-box">OpenHIE DASH - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.dash/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</h2>
   
-  
+
+
+
+
+
 
   <table class="">
 
@@ -189,47 +193,125 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
   </table>
-  
-  
-  
-  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Content</a></li><li><a href="#ip">Intellectual Property Considerations</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></div>
-  <a name="scope">   </a>
-	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
-   </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
-	</blockquote>
-	<p> </p>
-  <a name="1"/><h3>Content</h3> <a name="content">  </a>
-	<p/>
 
-<p>This publication contains the full set of specifications...</p>
-<p/>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
-<p/>
 
-<a name="navigation">  </a>
-<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
-<p/>
-	<a name="ip">  </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
-    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
-    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
-    licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
-  </p>
 
-	<a name="disclaimer">  </a>
-	<h3>Disclaimer</h3>
-	<p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
-  </p>
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#initial-requirements" id="markdown-toc-initial-requirements">Initial Requirements</a></li>
+  <li><a href="#relationship-to-other-fhir-implementation-guides" id="markdown-toc-relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</a></li>
+  <li><a href="#implementation-scenarios" id="markdown-toc-implementation-scenarios">Implementation Scenarios</a>    <ul>
+      <li><a href="#harmonize-data-dictionaries-and-vocabularies" id="markdown-toc-harmonize-data-dictionaries-and-vocabularies">Harmonize Data Dictionaries and Vocabularies</a></li>
+      <li><a href="#ingestion" id="markdown-toc-ingestion">Ingestion</a></li>
+      <li><a href="#optional-workflows-and-infrastructure" id="markdown-toc-optional-workflows-and-infrastructure">Optional Workflows and Infrastructure</a></li>
+      <li><a href="#actors-and-transactions" id="markdown-toc-actors-and-transactions">Actors and Transactions</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
+<blockquote>
+  <p>Note: This repository is a work-in-progress. It is for facilitating community discussion and not for production. It implies no endorsement from any institution including the members and participants in the OpenHIE Community of Practice.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Population-level improvements in health outcomes increasingly require providers, data managers, surveillance officers, and others to utilize more granular clinical quality reporting and data sources closer to the point-of-care, if not from the patient themselves. The Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide describes an approach to utilizing patient-level data in aggregate indicator reporting that is realistic for deployment by local implementers in resource-constrained environments and embraces system heterogeneity, consent, privacy, security, and data sovereignty.</p>
+
+<p>DASH provides the methodology, artifacts, and reference technologies to support scenarios in HIV healthcare for reporting aggregate indicators based on patient-level POC data, including:</p>
+
+<ul>
+  <li>Common, minimal terminology requirements.</li>
+  <li>Data mapping tooling so that Provider data may originate in diverse databases, not just FHIR (though exchanges are performed on FHIR-structured data with FHIR operations).</li>
+  <li>FHIR Measures (indicators) for common HIV-related healthcare quality measurement.</li>
+  <li>CQL logic that is reproducible and repeatable with example data.</li>
+  <li>Questionnaires with minimal ‘Must Support’ data fields in Provider systems.</li>
+  <li>CI/CD software workflows.</li>
+  <li>Considerations for health information exchange policy makers, planners, and developers.</li>
+</ul>
+
+<h2 id="initial-requirements">Initial Requirements</h2>
+
+<p>The initial scoping from diverse stakeholders includes an architecture and tooling that fulfills at minimum the following requirements:</p>
+
+<ul>
+  <li>Protects patient identity, ie. no patient personally identifiable information in external systems.</li>
+  <li>Wholly implementable within a national system or public health domain, e.g. HIV.</li>
+  <li>Providers may provide data submissions by hand, from database exports, CSV, EHRs; may participate if they contain incomplete patient records; and may participate asynchronously, e.g. when not networked.</li>
+  <li>Based on open standards and specifications.</li>
+  <li>Easy for local implementers to adapt to any context and adapt to other public health domains.</li>
+  <li>Embraces diverse scenarios for implementation from Provider- and governance-oriented perspectives, including the degree of patient identity management.</li>
+  <li>Ingestions based on the capabilities of existing systems, e.g. centralized patient data stores.</li>
+</ul>
+
+<h2 id="relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</h2>
+
+<p>DASH was initiated to build upon several ongoing initiatives that make it easier to reduce reporting burdens, accelerate data usage, ensure patient privacy and data security. The initiatives include the WHO SMART Guidelines, FHIR Clinical Guidelines Implementation Guide (CPG IG), and the Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide.</p>
+
+<ul>
+  <li>The Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide details a way to “enable automatic data collection and submission limiting the need for manual processing and intervention”. eCQM benefits include reducing reporting burdens and maximizing the value added from using patient-level data originating the Point of Care (POC). The DASH Architecture is an implementation for resource-constrained contexts informed by the US-oriented DEQM.</li>
+  <li>The technical approach is informed by, and adheres to the FHIR Clinical Guidelines Implementation Guide (CPG IG) which provides “a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.”</li>
+  <li>The suite of WHO SMART Guidelines. The WHO SMART Guidelines cover the entire clinical decision support domain. DASH only manages a priority list of aggregate indicators, and the demonstration tooling focuses on HIV only.  However, DASH and SMART utilize the same underlying methodologies and FHIR workflows for aggregate (eCQM) reporting and terminologies will ideally overlap.</li>
+</ul>
+
+<h2 id="implementation-scenarios">Implementation Scenarios</h2>
+
+<h3 id="harmonize-data-dictionaries-and-vocabularies">Harmonize Data Dictionaries and Vocabularies</h3>
+
+<p>Implementers must determine the overlap between DASH with their participating systems that define sets of codes from data dictionaries and their code systems (LOINC, SNOMED, ICD-10, RxNorm, …). This harmonization also includes demographic details.</p>
+
+<h3 id="ingestion">Ingestion</h3>
+
+<p>DASH is meant to be adapted without systems having to possess FHIR infrastructure and with different types of EMR systems.Supported types of ingestion include:</p>
+
+<ul>
+  <li>Structured non-FHIR data such as databases exported in CSV. This data is mapped using tooling into FHIR data structures.</li>
+  <li>FHIR QuestionnaireResponse.</li>
+  <li>FHIR resource bundles.</li>
+  <li>OpenMRS instances with the latest FHIR (v2) module.</li>
+  <li>OpenELIS instances with the latest FHIR module.</li>
+</ul>
+
+<p>Many workflows are possible that address the following:</p>
+<ul>
+  <li>Patient Deduplication and Disease-Specific Shared Health Records</li>
+  <li>Data Quality, Gaps, and Cleaning Workflows</li>
+  <li>DHIS2 or another analytics platform</li>
+  <li>Privacy and Security Workflows: https://www.hl7.org/fhir/secpriv-module.html</li>
+  <li>Semantic interoperability for CQM.</li>
+</ul>
+
+<p>The above technical considerations are not exhaustive and are meant to be informed in totality by data sovereignty, national and subnational patient privacy regulation, cybersecurity, and other best practices.</p>
+
+<h3 id="optional-workflows-and-infrastructure">Optional Workflows and Infrastructure</h3>
+
+<p>DASH is not dependent upon the following infrastructure, though they enable greater scale and flexibility.</p>
+
+<ul>
+  <li>Terminology services</li>
+  <li>Client (Patient) Registry</li>
+  <li>Shared Health Records</li>
+  <li>Master Facility List</li>
+  <li>Mechanism (Attribution) Registry</li>
+</ul>
+
+<h3 id="actors-and-transactions">Actors and Transactions</h3>
+
+<p><strong>DASH Producer</strong>: A Producer in DASH fulfills the role as specified in DEQM, that of a data producer which is a creator of healthcare data, and can “include providers and provider systems; patients, care teams, caregivers, and patient engagement systems; and other related clinical systems such as laboratory, clinic, and hospital information systems”</p>
+
+<p><strong>DASH Consumer</strong>: A Consumer in DASH fulfills the role as specified in DEQM, that of a consumer of data, and can include “can include data routers and aggregators, payers, health information exchanges and health integrated networks, as well as public health and other healthcare-related agencies”.</p>
+
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -253,13 +335,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 10, 2022 18:15+0000">2022-03-10</span>
+          IG &#169; 2022+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 6, 2022 10:20+0000">2022-04-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://xxsomewhere.org/fhir/myig/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/openhie.dash/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 
@@ -282,6 +364,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

@@ -1,9 +1,9 @@
 [
   {
-    "id": "xxexample.fhir.uv.myig",
+    "id": "openhie.dash",
     "type": "ImplementationGuide",
-    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
+    "url": "http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash",
     "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
+    "name": "OpenHIE DASH"
   }
 ]

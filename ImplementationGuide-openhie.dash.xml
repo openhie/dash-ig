@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="xxexample.fhir.uv.myig"/>
+  <id value="openhie.dash"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>XXYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>OpenHIE DASH</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash</pre><div><p>This implementation guide describes an architecture to use patient-level data in aggregate reporting.</p>
 </div></div>
   </text>
-  <url value="http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig"/>
+  <url value="http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash"/>
   <version value="0.1.0-test"/>
-  <name value="XXYourComputableMyIGNameHere"/>
-  <title value="xxYour User Friendly Name for MyIG Here"/>
+  <name value="OpenHIE DASH"/>
+  <title value="OpenHIE DASH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-10T18:15:07+00:00"/>
-  <publisher value="xxxYour Work Group"/>
+  <date value="2022-04-06T10:20:26+00:00"/>
+  <publisher value="OpenHIE"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://xxhl7.org/Special/committees/[something]"/>
+      <value value="http://ohie.org"/>
     </telecom>
   </contact>
-  <description value="xxxA brief description of what this IG is about "/>
+  <description value="This implementation guide describes an architecture to use patient-level data in aggregate reporting."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -36,7 +36,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2019+"/>
+        <valueString value="2022+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -124,7 +124,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://xxsomewhere.org/fhir/myig/history.html"/>
+        <valueString value="http://openhie.org/fhir/openhie.dash/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -223,14 +223,22 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
-        <generation value="html"/>
+        <title value="Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="changes.html"/>

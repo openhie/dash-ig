@@ -1,29 +1,29 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "xxexample.fhir.uv.myig",
+  "id": "openhie.dash",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>XXYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OpenHIE DASH</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash</pre><div><p>This implementation guide describes an architecture to use patient-level data in aggregate reporting.</p>\n</div></div>"
   },
-  "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
+  "url": "http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash",
   "version": "0.1.0-test",
-  "name": "XXYourComputableMyIGNameHere",
-  "title": "xxYour User Friendly Name for MyIG Here",
+  "name": "OpenHIE DASH",
+  "title": "OpenHIE DASH",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-10T18:15:07+00:00",
-  "publisher": "xxxYour Work Group",
+  "date": "2022-04-06T10:20:26+00:00",
+  "publisher": "OpenHIE",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://xxhl7.org/Special/committees/[something]"
+          "value": "http://ohie.org"
         }
       ]
     }
   ],
-  "description": "xxxA brief description of what this IG is about ",
+  "description": "This implementation guide describes an architecture to use patient-level data in aggregate reporting.",
   "jurisdiction": [
     {
       "coding": [
@@ -49,7 +49,7 @@
           },
           {
             "url": "value",
-            "valueString": "2019+"
+            "valueString": "2022+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -192,7 +192,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://xxsomewhere.org/fhir/myig/history.html"
+            "valueString": "http://openhie.org/fhir/openhie.dash/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -352,6 +352,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "page": {
@@ -361,8 +374,8 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
-          "generation": "html"
+          "title": "Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide",
+          "generation": "markdown"
         },
         {
           "nameUrl": "changes.html",
