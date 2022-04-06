@@ -1,0 +1,14 @@
+﻿OpenHIE DASH : Validation Results
+=========================================
+
+err = 1, warn = 2, info = 0
+IG Publisher Version: 1.1.114
+Generated Wed Apr 06 10:20:36 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
+ Build Errors : 0 / 1 / 0
+ /github/workspace/input/dash : 1 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be xxexample.fhir.uv.myig
+== input/dash.xml ==
+WARNING: ImplementationGuide/openhie.dash: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ImplementationGuide/openhie.dash: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)

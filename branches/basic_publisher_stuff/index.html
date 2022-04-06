@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.DASH\Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OpenHIE DASH</span><br/>0.1.0-test - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenHIE DASH - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/openhie.dash/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide</h2>
+  
+
+
+
+
+
+
+  <table class="">
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#initial-requirements" id="markdown-toc-initial-requirements">Initial Requirements</a></li>
+  <li><a href="#relationship-to-other-fhir-implementation-guides" id="markdown-toc-relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</a></li>
+  <li><a href="#implementation-scenarios" id="markdown-toc-implementation-scenarios">Implementation Scenarios</a>    <ul>
+      <li><a href="#harmonize-data-dictionaries-and-vocabularies" id="markdown-toc-harmonize-data-dictionaries-and-vocabularies">Harmonize Data Dictionaries and Vocabularies</a></li>
+      <li><a href="#ingestion" id="markdown-toc-ingestion">Ingestion</a></li>
+      <li><a href="#optional-workflows-and-infrastructure" id="markdown-toc-optional-workflows-and-infrastructure">Optional Workflows and Infrastructure</a></li>
+      <li><a href="#actors-and-transactions" id="markdown-toc-actors-and-transactions">Actors and Transactions</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<blockquote>
+  <p>Note: This repository is a work-in-progress. It is for facilitating community discussion and not for production. It implies no endorsement from any institution including the members and participants in the OpenHIE Community of Practice.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Population-level improvements in health outcomes increasingly require providers, data managers, surveillance officers, and others to utilize more granular clinical quality reporting and data sources closer to the point-of-care, if not from the patient themselves. The Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide describes an approach to utilizing patient-level data in aggregate indicator reporting that is realistic for deployment by local implementers in resource-constrained environments and embraces system heterogeneity, consent, privacy, security, and data sovereignty.</p>
+
+<p>DASH provides the methodology, artifacts, and reference technologies to support scenarios in HIV healthcare for reporting aggregate indicators based on patient-level POC data, including:</p>
+
+<ul>
+  <li>Common, minimal terminology requirements.</li>
+  <li>Data mapping tooling so that Provider data may originate in diverse databases, not just FHIR (though exchanges are performed on FHIR-structured data with FHIR operations).</li>
+  <li>FHIR Measures (indicators) for common HIV-related healthcare quality measurement.</li>
+  <li>CQL logic that is reproducible and repeatable with example data.</li>
+  <li>Questionnaires with minimal ‘Must Support’ data fields in Provider systems.</li>
+  <li>CI/CD software workflows.</li>
+  <li>Considerations for health information exchange policy makers, planners, and developers.</li>
+</ul>
+
+<h2 id="initial-requirements">Initial Requirements</h2>
+
+<p>The initial scoping from diverse stakeholders includes an architecture and tooling that fulfills at minimum the following requirements:</p>
+
+<ul>
+  <li>Protects patient identity, ie. no patient personally identifiable information in external systems.</li>
+  <li>Wholly implementable within a national system or public health domain, e.g. HIV.</li>
+  <li>Providers may provide data submissions by hand, from database exports, CSV, EHRs; may participate if they contain incomplete patient records; and may participate asynchronously, e.g. when not networked.</li>
+  <li>Based on open standards and specifications.</li>
+  <li>Easy for local implementers to adapt to any context and adapt to other public health domains.</li>
+  <li>Embraces diverse scenarios for implementation from Provider- and governance-oriented perspectives, including the degree of patient identity management.</li>
+  <li>Ingestions based on the capabilities of existing systems, e.g. centralized patient data stores.</li>
+</ul>
+
+<h2 id="relationship-to-other-fhir-implementation-guides">Relationship to other FHIR Implementation Guides</h2>
+
+<p>DASH was initiated to build upon several ongoing initiatives that make it easier to reduce reporting burdens, accelerate data usage, ensure patient privacy and data security. The initiatives include the WHO SMART Guidelines, FHIR Clinical Guidelines Implementation Guide (CPG IG), and the Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide.</p>
+
+<ul>
+  <li>The Da Vinci Data Exchange for Quality Measures (DEQM) FHIR Implementation Guide details a way to “enable automatic data collection and submission limiting the need for manual processing and intervention”. eCQM benefits include reducing reporting burdens and maximizing the value added from using patient-level data originating the Point of Care (POC). The DASH Architecture is an implementation for resource-constrained contexts informed by the US-oriented DEQM.</li>
+  <li>The technical approach is informed by, and adheres to the FHIR Clinical Guidelines Implementation Guide (CPG IG) which provides “a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.”</li>
+  <li>The suite of WHO SMART Guidelines. The WHO SMART Guidelines cover the entire clinical decision support domain. DASH only manages a priority list of aggregate indicators, and the demonstration tooling focuses on HIV only.  However, DASH and SMART utilize the same underlying methodologies and FHIR workflows for aggregate (eCQM) reporting and terminologies will ideally overlap.</li>
+</ul>
+
+<h2 id="implementation-scenarios">Implementation Scenarios</h2>
+
+<h3 id="harmonize-data-dictionaries-and-vocabularies">Harmonize Data Dictionaries and Vocabularies</h3>
+
+<p>Implementers must determine the overlap between DASH with their participating systems that define sets of codes from data dictionaries and their code systems (LOINC, SNOMED, ICD-10, RxNorm, …). This harmonization also includes demographic details.</p>
+
+<h3 id="ingestion">Ingestion</h3>
+
+<p>DASH is meant to be adapted without systems having to possess FHIR infrastructure and with different types of EMR systems.Supported types of ingestion include:</p>
+
+<ul>
+  <li>Structured non-FHIR data such as databases exported in CSV. This data is mapped using tooling into FHIR data structures.</li>
+  <li>FHIR QuestionnaireResponse.</li>
+  <li>FHIR resource bundles.</li>
+  <li>OpenMRS instances with the latest FHIR (v2) module.</li>
+  <li>OpenELIS instances with the latest FHIR module.</li>
+</ul>
+
+<p>Many workflows are possible that address the following:</p>
+<ul>
+  <li>Patient Deduplication and Disease-Specific Shared Health Records</li>
+  <li>Data Quality, Gaps, and Cleaning Workflows</li>
+  <li>DHIS2 or another analytics platform</li>
+  <li>Privacy and Security Workflows: https://www.hl7.org/fhir/secpriv-module.html</li>
+  <li>Semantic interoperability for CQM.</li>
+</ul>
+
+<p>The above technical considerations are not exhaustive and are meant to be informed in totality by data sovereignty, national and subnational patient privacy regulation, cybersecurity, and other best practices.</p>
+
+<h3 id="optional-workflows-and-infrastructure">Optional Workflows and Infrastructure</h3>
+
+<p>DASH is not dependent upon the following infrastructure, though they enable greater scale and flexibility.</p>
+
+<ul>
+  <li>Terminology services</li>
+  <li>Client (Patient) Registry</li>
+  <li>Shared Health Records</li>
+  <li>Master Facility List</li>
+  <li>Mechanism (Attribution) Registry</li>
+</ul>
+
+<h3 id="actors-and-transactions">Actors and Transactions</h3>
+
+<p><strong>DASH Producer</strong>: A Producer in DASH fulfills the role as specified in DEQM, that of a data producer which is a creator of healthcare data, and can “include providers and provider systems; patients, care teams, caregivers, and patient engagement systems; and other related clinical systems such as laboratory, clinic, and hospital information systems”</p>
+
+<p><strong>DASH Consumer</strong>: A Consumer in DASH fulfills the role as specified in DEQM, that of a consumer of data, and can include “can include data routers and aggregators, payers, health information exchanges and health integrated networks, as well as public health and other healthcare-related agencies”.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 6, 2022 10:20+0000">2022-04-06</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/openhie.dash/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

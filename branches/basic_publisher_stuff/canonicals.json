@@ -1,0 +1,9 @@
+[
+  {
+    "id": "openhie.dash",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash",
+    "version": "0.1.0-test",
+    "name": "OpenHIE DASH"
+  }
+]
