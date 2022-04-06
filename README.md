@@ -4,7 +4,7 @@
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/openhie/fhir-ig-empty/branches/main/index.html__  
-Canonical / permanent URL: 
+Canonical / permanent URL: __https://openhie.github.io/dash-ig/__
 <br> </br>
 
 ### Issues
