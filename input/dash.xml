@@ -41,6 +41,80 @@
         <!-- for markdown -->
         <generation value="markdown" />
       </page>
+
+      <page>
+        <nameUrl value="usecases.html" />
+        <title value="DASH use cases" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="concepts.html" />
+        <title value="Concepts" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="requirements.html" />
+        <title value="Requirements" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="personas.html" />
+        <title value="Personas" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="actors.html" />
+        <title value="Personas" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="transactions.html" />
+        <title value="Transacions" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="testing.html" />
+        <title value="Testing" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="downloads.html" />
+        <title value="Downloads" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="security-privacy.html" />
+        <title value="Security and Privacy" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="workflows.html" />
+        <title value="Workflows" />
+        <!-- for markdown -->
+        <generation value="markdown" />
+      </page>
+
+
+
+
       <!-- change history page -->
       <page>
         <nameUrl value="changes.html" />
