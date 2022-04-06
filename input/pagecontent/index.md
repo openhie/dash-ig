@@ -1,5 +1,3 @@
-# Data Aggregation Services for Health (“DASH”) Architecture FHIR Implementation Guide
-
 > Note: This repository is a work-in-progress. It is for facilitating community discussion and not for production. It implies no endorsement from any institution including the members and participants in the OpenHIE Community of Practice.
 
 ## Introduction
