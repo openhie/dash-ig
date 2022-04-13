@@ -12,7 +12,7 @@
   <title value="OpenHIE DASH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-04-06T17:03:54+00:00"/>
+  <date value="2022-04-13T12:55:14+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="xxexample.fhir.uv.myig"/>
+  <packageId value="openhie.dash"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
