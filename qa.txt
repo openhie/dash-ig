@@ -1,15 +1,14 @@
 ﻿OpenHIE DASH : Validation Results
 =========================================
 
-err = 3, warn = 4, info = 0
-IG Publisher Version: 1.1.114
-Generated Wed Apr 06 17:04:04 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
- Build Errors : 1 / 2 / 0
+err = 3, warn = 3, info = 0
+IG Publisher Version: 1.1.115
+Generated Wed Apr 13 12:55:26 UTC 2022. FHIR version 4.0.1 for openhie.dash#0.1.0-test (canonical = http://openhie.org/fhir/openhie.dash)
+ Build Errors : 1 / 1 / 0
  /github/workspace/fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire : 3 / 1 / 1
  /github/workspace/input/dash : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be xxexample.fhir.uv.myig
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/PLM-HIV-Questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-PLM-HIV-Questionnaire-form.html: Unable to read attribute on <div> at line 261 column 71
 == fsh-generated/resources/Questionnaire-PLM-HIV-Questionnaire.json ==

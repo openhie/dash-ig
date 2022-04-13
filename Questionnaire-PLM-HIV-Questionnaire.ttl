@@ -24,7 +24,7 @@
   fhir:Questionnaire.name [ fhir:value "PLMHIVQuestionnaire"];
   fhir:Questionnaire.title [ fhir:value "PLM Prototype Questionnaire - HIV"];
   fhir:Questionnaire.status [ fhir:value "active"];
-  fhir:Questionnaire.date [ fhir:value "2022-04-06T17:03:54+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-04-13T12:55:14+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "OpenHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;
