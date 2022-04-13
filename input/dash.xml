@@ -22,7 +22,7 @@
       <code value="001" />
     </coding>
   </jurisdiction>
-  <packageId value="xxexample.fhir.uv.myig" />
+  <packageId value="openhie.dash" />
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0" />
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
