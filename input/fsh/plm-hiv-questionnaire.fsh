@@ -2,7 +2,11 @@ Instance: PLM-HIV-Questionnaire
 InstanceOf: Questionnaire
 Usage: #example
 * url = "https://openhie.github.io/dash-ig/Questionnaire/PLM-HIV-Questionnaire"
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract"
+// looks that must be one of:
+// http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-smap
+// http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn
+// http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-obsn
+* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-smap"
 * name = "PLMHIVQuestionnaire"
 * title = "PLM Prototype Questionnaire - HIV"
 * status = #active
