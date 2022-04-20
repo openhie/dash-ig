@@ -20,7 +20,7 @@ Usage: #example
 * item[=].item[+].linkId = "/Patient/gender"
 * item[=].item[=].text = "Gender"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = "http://hl7.org/fhir/administrative-gender"
+* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
 * item[=].item[=].definition = "http://datim.org/fhir/StructureDefinition/PLM-HIV-Patient#Patient.gender"
 * item[+].linkId = "/Encounter"
 * item[=].text = "Encounter"
