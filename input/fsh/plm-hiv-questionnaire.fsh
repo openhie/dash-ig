@@ -1,7 +1,7 @@
 Instance: PLM-HIV-Questionnaire
 InstanceOf: Questionnaire
 Usage: #example
-* url = "http://datim.org/fhir/Questionnaire/PLM-HIV-Questionnaire"
+* url = "https://openhie.github.io/dash-ig/Questionnaire/PLM-HIV-Questionnaire"
 * meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract"
 * name = "PLMHIVQuestionnaire"
 * title = "PLM Prototype Questionnaire - HIV"
@@ -20,18 +20,7 @@ Usage: #example
 * item[=].item[+].linkId = "/Patient/gender"
 * item[=].item[=].text = "Gender"
 * item[=].item[=].type = #choice
-//* item[=].item[=].answerValueSet.concept[0].code = "male"
-//* item[=].item[=].answerValueSet.concept[=].display = "Male"
-//* item[=].item[=].answerValueSet.concept[=].definition = "Male."
-//* item[=].item[=].answerValueSet.concept[+].code = "female"
-//* item[=].item[=].answerValueSet.concept[=].Display = "Female"
-//* item[=].item[=].answerValueSet.concept[=].Definition = "Female."
-//* item[=].item[=].answerValueSet.concept[+].Code = "other"
-//* item[=].item[=].answerValueSet.concept[=].Display = "Other"
-//* item[=].item[=].answerValueSet.concept[=].Definition = "Other."
-//* item[=].item[=].answerValueSet.concept[+].Code = "unknown"
-//* item[=].item[=].answerValueSet.concept[=].Display = "Unknown"
-//* item[=].item[=].answerValueSet.concept[=].Definition = "Unknown."
+* item[=].item[=].answerValueSet = "http://hl7.org/fhir/administrative-gender"
 * item[=].item[=].definition = "http://datim.org/fhir/StructureDefinition/PLM-HIV-Patient#Patient.gender"
 * item[+].linkId = "/Encounter"
 * item[=].text = "Encounter"

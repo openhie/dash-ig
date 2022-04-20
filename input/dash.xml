@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="openhie.dash" />
-  <url value="http://openhie.org/fhir/openhie.dash/ImplementationGuide/openhie.dash" />
+  <url value="https://openhie.github.io/dash-ig/ImplementationGuide/openhie.dash" />
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test" />
   <name value="OpenHIE DASH" />
@@ -49,6 +49,32 @@
       <version value="dev"/>
   </dependsOn>
   <definition>
+
+    <resource>
+      <reference>
+        <reference value="Device/cqf-tooling"/>
+      </reference>
+      <name value="Device/cqf-tooling"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Library/FHIRHelpers"/>
+      </reference>
+      <name value="Library/FHIRHelpers"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Library/FHIRCommon"/>
+      </reference>
+      <name value="Library/FHIRCommon"/>
+      <description value="A simple example showing how examples are defined and referenced"/>
+    </resource>
+
+
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
     <page>
@@ -172,10 +198,11 @@
       <code value="path-resource" />
       <value value="input\scenarios" />
     </parameter>
-    <parameter>
+    <!-- have to remove for cqf tooling to work -->
+    <!-- <parameter>
       <code value="path-binary" />
       <value value="input\cql" />
-    </parameter>
+    </parameter> -->
     <parameter>
       <code value="path-liquid" />
       <value value="templates\liquid" />
