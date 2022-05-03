@@ -1,0 +1,13 @@
+{
+ "package-id" : "openhie.dash",
+ "title" : "OpenHIE DASH", 
+ "canonical" : "https://openhie.github.io/dash", 
+ "introduction" : "OpenHIE DASH",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "https://openhie.github.io/dash",
+  "status" : "ci-build",
+  "current" : true
+ }]
+}

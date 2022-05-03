@@ -1,7 +1,7 @@
-Instance: PLM-HIV-Questionnaire
+Instance: PLMHIVQuestionnaire
 InstanceOf: Questionnaire
 Usage: #example
-* url = "https://openhie.github.io/dash-ig/Questionnaire/PLM-HIV-Questionnaire"
+* url = "https://openhie.github.io/dash-ig/Questionnaire/PLMHIVQuestionnaire"
 // looks that must be one of:
 // http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-smap
 // http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn
