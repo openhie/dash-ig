@@ -44,9 +44,9 @@
       <version value="current"/>
   </dependsOn>
   <dependsOn id="cqf">
-      <uri value="http://fhir.org/guides/cqf/ImplementationGuide/cqf.fhir.common"/>
-      <packageId value="cqf.fhir.common"/>
-      <version value="dev"/>
+    <uri value="http://fhir.org/guides/cqf/common/ImplementationGuide/fhir.cqf.common"/>
+    <packageId value="fhir.cqf.common"/>
+    <version value="4.0.1"/>
   </dependsOn>
   <definition>
 
